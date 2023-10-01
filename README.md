@@ -1,4 +1,5 @@
 # Auksjonen
+![Auksjonen Listings](images/auksjonen.jpg)
 
 ## Description
 
