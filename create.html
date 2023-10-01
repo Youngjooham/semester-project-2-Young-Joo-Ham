@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Listing</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/listings.html">
+        <img src="images/auction.jpg" alt="Logo" style="max-height: 80px;">
+      </a>
+      <a href="/listings.html" class="logo-text">Auksjonen</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="aboutUs">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item" id="listingsNav">
+            <a class="nav-link" href="/listings.html">All listings</a>
+          </li>
+          <li class="nav-item" id="loginNav">
+            <a class="nav-link" href="/login.html">Login</a>
+          </li>
+          <li class="nav-item" id="registerNav">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item" id="createNav">
+            <a class="nav-link" href="/create.html">Create listing</a>
+          </li>
+          <li class="nav-item" id="dashboardNav">
+            <a class="nav-link" href="/dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item" id="logoutNav">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Create a Listing</h1>
+
+    <!-- Form to input listing details -->
+    <form id="listingForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required /><br />
+
+      <label for="endsAt">Ends At:</label>
+      <input type="datetime-local" id="endsAt" name="endsAt" required /><br />
+
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+
+      <label for="media">Media Gallery:</label>
+      <input type="text" id="media" name="media" /><br />
+
+      <input type="submit" value="Create Listing" />
+    </form>
+
+    <!-- Display listing details -->
+    <h2>Listing Details</h2>
+    <p><strong>Title:</strong> <span id="displayTitle"></span></p>
+    <p><strong>Description:</strong> <span id="displayDescription"></span></p>
+    <p><strong>Tags:</strong> <span id="displayTags"></span></p>
+    <p><strong>Media:</strong> <span id="displayMedia"></span></p>
+    <p><strong>Ends At:</strong> <span id="displayEndsAt"></span></p>
+    <p><strong>ID:</strong> <span id="displayID"></span></p>
+
+    <div class="pusher"></div>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-logo">
+              </div>
+              <div class="footer-links">
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">All Listings</a></li>
+                      <li><a href="#">Create Listing</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-social">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <p>&copy; 2023 Your Auction Website. All rights reserved.</p>
+      </div>
+  </footer>
+    <!-- Display success or error message -->
+    <div id="message"></div>
+
+    <script src="js/create.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/logout.js"></script>
+    
+  </body>
+</html>

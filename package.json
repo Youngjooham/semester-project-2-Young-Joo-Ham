@@ -1,0 +1,27 @@
+{
+  "name": "semester-project-2-young-joo-ham",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass src/scss:dist/css --watch",
+    "start": "live-server",
+    "dev": "npm-run-all --parallel watch start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngjooham/semester-project-2-Young-Joo-Ham.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youngjooham/semester-project-2-Young-Joo-Ham/issues"
+  },
+  "homepage": "https://github.com/Youngjooham/semester-project-2-Young-Joo-Ham#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.66.1"
+  }
+}
