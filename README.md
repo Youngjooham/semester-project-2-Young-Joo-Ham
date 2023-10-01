@@ -1,7 +1,5 @@
 # Auksjonen
 
-![Auksjonen All Listings](https://user-images.githubusercontent.com/100440331/207758087-50107bb1-8e9b-4bed-bcd8-9e4940a75b85.jpg)
-
 ## Description
 
 #### This website was made for my school Semester Project 2
